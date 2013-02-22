@@ -59,10 +59,8 @@
                  [else
                   (vector-set! c i (add1 (vector-ref c i)))
                   ;; (displayln v)
-                  ;; (define f (flip-count v))
-                  ;; (define m (max max-flip f))
-                  (define f 1)
-                  (define m 1)
+                  (define f (flip-count v))
+                  (define m (max max-flip f))
                   (loop 1
                         (if toggle
                             (+ checksum f)
